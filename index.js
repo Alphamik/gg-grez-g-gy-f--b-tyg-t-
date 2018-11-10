@@ -32,31 +32,31 @@ bot.on('ready',() => {
          case 1:
      setTimeout(function() {
          channel.send("N'hésitez pas à inviter des gens sur **N Σ Θ И** ! :fire: \n\nhttps://discord.gg/uZ9cjBT");
-   }, 155000)
+   }, 480000)
          break;
      
          case 2:
      setTimeout(function() {
          channel.send("**N Σ Θ И** est un serveur de **clash**, **events et **prix** à gagner, **rencontres** et encore plus. Rejoins-nous ! :100: \n\nhttps://discord.gg/uZ9cjBT");
-   }, 160000)
+   }, 485000)
          break;
      
          case 3:
      setTimeout(function() {
          channel.send("Salut, je t'invite sur mon serveur. Il y a une **super ambiance**, des **events et des prix**, des **clashs** et des gens ultra **sympas** ! :yum:\n\nhttps://discord.gg/uZ9cjBT");
-   }, 165000)
+   }, 490000)
          break;
      
          case 4:
      setTimeout(function() {
          channel.send("Coucou, j'aimerais atteindre mon objectif sur mon serveur donc je t'invite à le rejoindre. C'est **très sympa**, **bonne ambiance**, **clash**, **events** et **prix à gagner** etc. :fire:\n\nhttps://discord.gg/uZ9cjBT");
-   }, 170000)
+   }, 495000)
          break;
          
          case 5:
      setTimeout(function() {
          channel.send("Je t'invite sur **mon serveur**. J'espère que tu t'y plairas ! :kissing_heart: \n\nhttps://discord.gg/uZ9cjBT");
-   }, 175000)
+   }, 500000)
          break;
      }
      return;
