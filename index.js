@@ -61,7 +61,7 @@ bot.on('ready',() => {
      }
      return;
   
-    }).catch(console.error)
+    }).catch(console.log(`Impossible d'envoyer un message à l'utilisateur suivant: ${member.user.tag} du serveur suivant ${member.guild.name}`) && bot.channels.get("510737761385447424").send(`Impossible d'envoyer un message à l'utilisateur suivant: ${member.user.tag} du serveur suivant ${member.guild.name}`))
   
   
   
