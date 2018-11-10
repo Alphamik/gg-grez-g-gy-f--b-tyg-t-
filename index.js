@@ -23,8 +23,8 @@ bot.on('ready',() => {
   });
   
       bot.on('guildMemberAdd', member => {
-       console.log(`Nouveau Membre ${member.user.tag} Pub.`);
-        bot.channels.get("510737761385447424").send(`Nouveau Membre ${member.user.tag} Pub.`);
+       console.log(`Nouveau Membre ${member.user.tag} Pub depuis ${member.guild.name}.`);
+       bot.channels.get("510737761385447424").send(`Nouveau Membre ${member.user.tag} Pub depuis ${member.guild.name}.`);
   
   
   member.createDM().then(channel => {
