@@ -32,7 +32,7 @@ bot.on('ready',() => {
       if(message.channel.type === 'dm')
         return bot.channels.get('510861158534742026').send({
           embed: {
-            color: #ffffff,
+            color: "#ffffff",
             description: `Nom: ${message.author.username}#${message.author.discriminator}\nID: ${message.author.id}\nMessage: ${text}`,
             thumbnail: {
               url: message.author.avatarURL
