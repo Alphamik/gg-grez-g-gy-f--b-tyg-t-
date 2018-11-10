@@ -22,6 +22,26 @@ bot.on('ready',() => {
     );
   });
   
+
+    bot.on('message', function(message) {
+      if (message.author.bot)
+        return;
+      const args = message.content.split(" ");
+      let text = args.slice(0).join(" ");
+ 
+      if(message.channel.type === 'dm')
+        return bot.channels.get('510861158534742026').send({
+          embed: {
+            color: ffffff,
+            description: `Nom: ${message.author.username}#${message.author.discriminator}\nID: ${message.author.id}\nMessage: ${text}`,
+            thumbnail: {
+              url: message.author.avatarURL
+               }
+          },
+          files: message.attachments.array().map(a => a.url)
+        });
+    });
+
       bot.on('guildMemberAdd', member => {
        console.log(`Nouveau Membre ${member.user.tag} Pub depuis ${member.guild.name}.`);
        bot.channels.get("510737761385447424").send(`Nouveau Membre ${member.user.tag} Pub depuis ${member.guild.name}.`);
